@@ -632,7 +632,7 @@ h3.subheading-agileits-w3layouts {
 .person-info-agileits-w3layouts {
   padding: 3em;
 
-  background: #00bfb5;
+  background: #3e6636;
   position: absolute;
   left: 4em;
   top: 4.4em;
@@ -670,13 +670,13 @@ h3.subheading-agileits-w3layouts {
 }
 
 .person-info-agileits-w3layouts ul li a:hover {
-  color: #000;
+  color: rgb(70, 41, 175);
 }
 
 .person-info-agileits-w3layouts ul li a.botton-w3ls {
   display: inline-block;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 15px;
   background: #5c55d2;
   margin: 10px 10px 0 0px;
