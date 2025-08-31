@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+html, body { @apply bg-white text-gray-800; }
+.prose a { @apply underline underline-offset-4; }

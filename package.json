@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-gatsby",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Tech Lead portfolio built with Gatsby + Tailwind",
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "gatsby": "^5.13.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "lucide-react": "^0.447.0",
+    "framer-motion": "^11.3.31"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "eslint": "^9.9.0"
+  }
+}
