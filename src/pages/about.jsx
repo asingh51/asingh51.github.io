@@ -142,7 +142,7 @@ export default function Home() {
           </p>
           <div className="mt-5 flex justify-center gap-3">
             <Link
-              to="/contact"
+              to="/"
               className="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
             >
               Contact
