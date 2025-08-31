@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import SEOComponent from "../components/SEO";
 
 const principles = [
   "Structure > control: clear goals, written decisions, lightweight guardrails.",
@@ -58,14 +58,13 @@ const kpis = [
 export default function Leadership() {
   return (
     <Layout>
-      <SEO title="Leadership" />
+      <SEOComponent title="Leadership" />
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-16">
         <h1 className="text-3xl font-bold">Leadership</h1>
         <p className="mt-3 text-gray-700">
           I lead with structure, clarity, and empathy—so teams ship calmly and systems scale.
         </p>
 
-        {/* Principles */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border p-6 bg-white">
             <h2 className="text-lg font-semibold">Leadership Principles</h2>
@@ -74,7 +73,6 @@ export default function Leadership() {
             </ul>
           </div>
 
-          {/* Outcomes */}
           <div className="rounded-xl border p-6 bg-white">
             <h2 className="text-lg font-semibold">Team Outcomes</h2>
             <ul className="mt-3 space-y-3 text-sm">
@@ -88,7 +86,6 @@ export default function Leadership() {
           </div>
         </div>
 
-        {/* Mentoring & Delivery */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border p-6 bg-white">
             <h2 className="text-lg font-semibold">Mentorship & Growth</h2>
@@ -105,7 +102,6 @@ export default function Leadership() {
           </div>
         </div>
 
-        {/* Decision-making & Conflict */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border p-6 bg-white">
             <h2 className="text-lg font-semibold">Decision-Making (ADRs)</h2>
@@ -122,7 +118,6 @@ export default function Leadership() {
           </div>
         </div>
 
-        {/* Hiring & KPIs */}
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <div className="rounded-xl border p-6 bg-white">
             <h2 className="text-lg font-semibold">Hiring Rubric</h2>
@@ -139,7 +134,6 @@ export default function Leadership() {
           </div>
         </div>
 
-        {/* CTA */}
         <div className="rounded-xl border p-6 bg-gray-50 mt-8">
           <h2 className="text-lg font-semibold">Working With Me</h2>
           <p className="text-sm text-gray-700 mt-2">

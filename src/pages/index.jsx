@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import SEOComponent from "../components/SEO";
 
 export default function About() {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEOComponent title="About" />
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-16 prose lg:prose-lg">
         <div className="flex justify-center">
           <img
@@ -15,7 +15,7 @@ export default function About() {
           />
         </div>
         <p>
-          I’m Abhay (Sunny), a Senior Full-Stack Engineer passionate about building scalable, reliable platforms with a focus on team health and sustainable growth.
+          A Senior Full-Stack Engineer passionate about building scalable, reliable platforms with a focus on team health and sustainable growth.
         </p>
         <p>
           -

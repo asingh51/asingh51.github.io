@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import SEOComponent from "../components/SEO";
 import { Link } from "gatsby";
 
 export default function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="Page Not Found" />
+      <SEOComponent title="Page Not Found" />
       <section className="max-w-2xl mx-auto px-6 pt-16 pb-24 text-center">
         <h1 className="text-4xl font-bold mb-4">404 — Page Not Found</h1>
         <p className="text-gray-600 mb-8">

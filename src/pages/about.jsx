@@ -1,17 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/SEO";
-import { featured } from "../data/projects";
-import ImpactCard from "../components/ImpactCard";
+import SEOComponent from "../components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
 
 export default function Home() {
   return (
     <Layout>
-      <SEO />
+      <SEOComponent />
 
-      {/* HERO */}
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-10">
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
@@ -46,7 +43,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QUICK STATS BAND */}
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 rounded-2xl border p-6 bg-white">
           <div>
@@ -68,7 +64,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS / DOMAINS */}
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="rounded-2xl bg-gray-50 p-8 border">
           <h2 className="text-xl font-semibold">Focus Areas</h2>
@@ -92,7 +87,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ARCHITECTURE / LEADERSHIP BLURBS */}
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-2xl border p-6 bg-white">
@@ -116,7 +110,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="rounded-2xl border p-6 bg-gray-50">
           <h3 className="text-lg font-semibold">What teammates say</h3>
@@ -133,7 +126,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <div className="rounded-2xl border p-8 text-center">
           <h3 className="text-xl font-semibold">Looking for an emerging Tech Lead?</h3>
