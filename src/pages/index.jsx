@@ -14,9 +14,6 @@ export default function About() {
             className="w-32 h-32 rounded-full mx-auto mb-6"
           />
         </div>
-        <p>
-          I’m helping to build <a href="https://jobminglr.com" target="_blank" rel="noopener noreferrer">JobMinglr</a> as CTO — a swipe-to-match hiring platform.
-        </p>
         <p>-</p>
         <p>
           Currently, I lead tech teams at{" "}
