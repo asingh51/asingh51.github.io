@@ -4,9 +4,8 @@ import Layout from "../components/Layout";
 import SEOComponent from "../components/SEO";
 
 const PROFILE_MAP = {
-  tl: { key: "tech-lead", title: "Tech Lead Resume", file: "/resumes/tech-lead.pdf" },
-  tpm:   { key: "tpm",       title: "TPM Resume",       file: "/resumes/tpm.pdf" },
-  fs:    { key: "fullstack", title: "Full-Stack Resume", file: "/resumes/fullstack.pdf" },
+  tl:  { key: "tech-lead", title: "Tech Lead Resume", file: "/resumes/team-lead.pdf" },
+  tpm: { key: "tpm",       title: "TPM Resume",       file: "/resumes/tpm.pdf" },
 };
 
 function ResumeGate() {
@@ -51,7 +50,6 @@ function ResumeGate() {
 }
 
 function ResumeProfile({ profileKey }) {
-  console.log("Rendering profile for key:", profileKey);
   const profiles = Object.values(PROFILE_MAP).reduce((acc, p) => {
     acc[p.key] = p;
     return acc;

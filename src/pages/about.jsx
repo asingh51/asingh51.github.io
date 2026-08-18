@@ -1,152 +1,84 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SEOComponent from "../components/SEO";
-import { motion } from "framer-motion";
-import { Link } from "gatsby";
 
-export default function Home() {
+export default function About() {
   return (
     <Layout>
-      <SEOComponent />
+      <SEOComponent
+        title="About"
+        description="Abhay (Sunny) Singh — Senior Software Engineer and Tech Lead with 10+ years across healthcare, payments, procurement, and startup product engineering."
+      />
+      <section className="max-w-3xl mx-auto px-6 pt-16 pb-16 prose lg:prose-lg">
+        <div className="flex justify-center">
+          <img
+            src="/images/profile.png"
+            alt="Abhay Singh"
+            className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+          />
+        </div>
 
-      <section className="max-w-6xl mx-auto px-6 pt-16 pb-10">
-        <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35 }}
-          className="text-3xl sm:text-5xl font-bold leading-tight"
-        >
-          Senior Software Engineer → <span className="text-brand">Tech Lead</span>
-        </motion.h1>
-
-        <p className="mt-4 text-gray-700 max-w-3xl">
-          I’m Abhay (Sunny) — I design scalable systems, reduce costs without cutting corners,
-          and grow engineers through clear processes and mentorship.
-        </p>
-        <p className="mt-2 text-gray-700">
-          Core stack: React, Java/Spring, AWS, PostgreSQL. Recently: HL7 processing, GenAI pilots, cost-optimization.
+        <h1 className="text-center">Abhay (Sunny) Singh</h1>
+        <p className="text-center text-gray-500 -mt-4">
+          Senior Software Engineer → Tech Lead
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            to="/projects"
-            className="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
-          >
-            View Case Studies
-          </Link>
-          <Link
-            to="/resume"
-            className="rounded-xl border px-5 py-3 font-semibold hover:bg-gray-50 transition"
-          >
-            See Resume (Password)
-          </Link>
-        </div>
-      </section>
+        <p>
+          I'm a software engineer with over a decade of experience turning ambiguous problems
+          into systems that scale, and turning teams into people who can own that scale
+          themselves. I currently lead engineering work at{" "}
+          <a href="https://www2.deloitte.com" target="_blank" rel="noopener noreferrer">
+            Deloitte
+          </a>
+          , where I've re-platformed a CDC vaccine administration system onto AWS, cut
+          multi-million dollars in infrastructure spend through right-sizing and lifecycle
+          automation, and built an HL7/eICR processing pipeline — including a GenAI-assisted
+          extraction prototype — used to support public health reporting.
+        </p>
 
-      <section className="max-w-6xl mx-auto px-6 pb-12">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 rounded-2xl border p-6 bg-white">
-          <div>
-            <div className="text-2xl font-bold">10+ yrs</div>
-            <div className="text-xs text-gray-500">Building & shipping</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold">99.9%+</div>
-            <div className="text-xs text-gray-500">SLA targets achieved</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold">30%↓</div>
-            <div className="text-xs text-gray-500">Infra cost on key platform</div>
-          </div>
-          <div>
-            <div className="text-2xl font-bold">6→mid</div>
-            <div className="text-xs text-gray-500">Mentored juniors to mid-level</div>
-          </div>
-        </div>
-      </section>
+        <p>
+          Before Deloitte, I spent time at{" "}
+          <a href="https://www.deere.com" target="_blank" rel="noopener noreferrer">
+            John Deere
+          </a>{" "}
+          building procurement automation that saved roughly $1.5M in vendor negotiations,
+          at{" "}
+          <a href="https://www.hitachi-payments.com" target="_blank" rel="noopener noreferrer">
+            Hitachi Payment Services
+          </a>{" "}
+          hardening payment platforms that processed millions of daily transactions under
+          PCI-DSS constraints, and at{" "}
+          <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer">
+            Capgemini
+          </a>{" "}
+          delivering enterprise web applications for global clients. In parallel, I've been
+          building{" "}
+          <a href="https://github.com/asingh51" target="_blank" rel="noopener noreferrer">
+            JobMinglr
+          </a>
+          , a swipe-to-match hiring platform, as founder and tech lead — which keeps me
+          honest about shipping product end-to-end, not just architecting it.
+        </p>
 
-      <section className="max-w-6xl mx-auto px-6 pb-12">
-        <div className="rounded-2xl bg-gray-50 p-8 border">
-          <h2 className="text-xl font-semibold">Focus Areas</h2>
-          <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            {[
-              "System design",
-              "Service contracts & SLAs",
-              "Observability (logs/metrics/traces)",
-              "Resiliency (retries/DLQ/circuit breakers)",
-              "CI/CD & release hygiene",
-              "Cost-aware architectures",
-              "Mentorship & review rubrics",
-              "HL7/eICR & public health data",
-              "GenAI pilots (Bedrock)",
-            ].map((t) => (
-              <span key={t} className="rounded-full border bg-white px-3 py-1">
-                {t}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+        <p>
+          What ties this together is a "structure over control" approach to leading teams:
+          clear contracts and SLAs instead of tribal knowledge, observability and resiliency
+          built in from day one instead of bolted on after an incident, and mentorship that's
+          measured by whether people grow past needing me. I hold a Master's in Computer
+          Science from the University of Texas at Arlington, specializing in web, mobile, and
+          AI systems.
+        </p>
 
-      <section className="max-w-6xl mx-auto px-6 pb-12">
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="rounded-2xl border p-6 bg-white">
-            <h3 className="text-lg font-semibold">Architecture Principles</h3>
-            <ul className="mt-3 list-disc pl-5 text-sm space-y-1">
-              <li>Contracts first; decouple with clear SLAs and error budgets.</li>
-              <li>Resiliency as a habit: timeouts, idempotency, DLQs, bulkheads.</li>
-              <li>Observability by default: dashboards before launch.</li>
-              <li>Cost is a feature: right-size, lifecycle, autoscale.</li>
-            </ul>
-          </div>
-          <div className="rounded-2xl border p-6 bg-white">
-            <h3 className="text-lg font-semibold">Leadership & Delivery</h3>
-            <ul className="mt-3 list-disc pl-5 text-sm space-y-1">
-              <li>Calm delivery rhythm: ruthless prioritization, demo &gt; status.</li>
-              <li>Mentorship tracks: pairing plan, review checklist, growth goals.</li>
-              <li>ADRs for decisions: options, trade-offs, rollback plan.</li>
-              <li>Hiring signals: problem framing, systems thinking, comms.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-6 pb-12">
-        <div className="rounded-2xl border p-6 bg-gray-50">
-          <h3 className="text-lg font-semibold">What teammates say</h3>
-          <div className="mt-4 grid md:grid-cols-2 gap-4 text-sm text-gray-700">
-            <blockquote className="rounded-xl bg-white border p-4">
-              “Sunny brings clarity. Our incidents dropped while velocity went up.”
-              <div className="mt-2 text-xs text-gray-500">— Eng Manager</div>
-            </blockquote>
-            <blockquote className="rounded-xl bg-white border p-4">
-              “He mentors without taking the keyboard. People grow around him.”
-              <div className="mt-2 text-xs text-gray-500">— Staff Engineer</div>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section className="max-w-6xl mx-auto px-6 pb-16">
-        <div className="rounded-2xl border p-8 text-center">
-          <h3 className="text-xl font-semibold">Looking for an emerging Tech Lead?</h3>
-          <p className="mt-2 text-gray-600">
-            I’m happy to share deeper architecture docs, dashboards, and ADRs on request.
-          </p>
-          <div className="mt-5 flex justify-center gap-3">
-            <Link
-              to="/"
-              className="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
-            >
-              Contact
-            </Link>
-            <Link
-              to="/projects"
-              className="rounded-xl border px-5 py-3 font-semibold hover:bg-gray-50 transition"
-            >
-              Explore Projects
-            </Link>
-          </div>
-        </div>
+        <p>
+          I'm currently looking at Tech Lead and TPM-adjacent roles where I can own systems
+          end-to-end and help a team scale with them. If that sounds like a fit, take a look
+          at the <a href="/projects">project case studies</a> and{" "}
+          <a href="/leadership">leadership playbook</a>, or{" "}
+          <a href="mailto:abhaysingh200009@gmail.com" className="text-blue-600 underline">
+            reach out directly
+          </a>
+          .
+        </p>
       </section>
     </Layout>
   );
