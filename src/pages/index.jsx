@@ -47,6 +47,9 @@ export default function Home() {
             <p className="mt-2 text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500">
               Open to: full-time · remote (US) or hybrid from Austin, TX · not seeking full-time onsite
             </p>
+            <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+              👋 Say hi — always up for talking systems design, career pivots, or good taco spots in Austin.
+            </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
@@ -64,14 +67,24 @@ export default function Home() {
             </div>
           </div>
 
-          <motion.img
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.35 }}
-            src="/images/profile.png"
-            alt="Abhay Singh"
-            className="hidden sm:block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg justify-self-center"
-          />
+            className="hidden sm:block relative justify-self-center"
+          >
+            <img
+              src="/images/profile.png"
+              alt="Abhay Singh"
+              className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg"
+            />
+            <img
+              src="/images/sticker.jpeg"
+              alt=""
+              aria-hidden="true"
+              className="absolute -bottom-3 -right-4 h-14 w-auto md:h-16 rounded-lg shadow-lg rotate-[-10deg] ring-2 ring-white dark:ring-gray-900"
+            />
+          </motion.div>
         </div>
       </section>
 
