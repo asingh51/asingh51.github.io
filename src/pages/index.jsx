@@ -4,6 +4,7 @@ import Seo from "../components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import ArchDiagram from "../components/ArchDiagram";
+import { testimonials } from "../data/testimonials";
 
 export const Head = () => <Seo />;
 
@@ -27,7 +28,7 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight"
             >
-              Senior Software Engineer → <span className="text-brand dark:text-sky-400">Tech Lead</span>
+              Staff Software Engineer → <span className="text-brand dark:text-sky-400">Tech Lead</span>
             </motion.h1>
 
             <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl">
@@ -85,8 +86,8 @@ export default function Home() {
             <div className="text-xs text-gray-500 dark:text-gray-400">SLA targets achieved</div>
           </div>
           <div>
-            <div className="text-2xl font-bold">30%↓</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Infra cost on key platform</div>
+            <div className="text-2xl font-bold">$50M</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">Infra cost saved (CDC re-host)</div>
           </div>
           <div>
             <div className="text-2xl font-bold">6→mid</div>
@@ -108,8 +109,8 @@ export default function Home() {
               { t: "CI/CD & release hygiene", to: "/writing/why-fridays-are-for-demos" },
               { t: "Cost-aware architectures", to: "/writing/adrs-that-survive-contact-with-reality" },
               { t: "Mentorship & review rubrics", to: "/writing/the-30-60-90-mentorship-playbook" },
-              { t: "HL7/eICR & public health data", to: "/projects/cdc-vaccine-system" },
-              { t: "GenAI pilots (Bedrock)", to: "/projects/cdc-vaccine-system" },
+              { t: "HL7/eICR & public health data", to: "/projects/state-of-illinois-disease-surveillance" },
+              { t: "GenAI pilots (Bedrock)", to: "/projects/state-of-illinois-disease-surveillance" },
             ].map(({ t, to }) => (
               <Link
                 key={t}
@@ -143,6 +144,36 @@ export default function Home() {
               <li>Hiring signals: problem framing, systems thinking, comms.</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-6 pb-12">
+        <h2 className="text-xl font-semibold">What people I've worked with say</h2>
+        <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+          Named LinkedIn recommendations —{" "}
+          <a
+            href="https://www.linkedin.com/in/abbi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:text-brand dark:hover:text-sky-400"
+          >
+            verify on LinkedIn
+          </a>
+          .
+        </p>
+        <div className="mt-4 grid md:grid-cols-3 gap-4">
+          {testimonials.map((t) => (
+            <blockquote
+              key={t.name}
+              className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 text-sm flex flex-col"
+            >
+              <p className="text-gray-700 dark:text-gray-300 flex-1">“{t.quote}”</p>
+              <footer className="mt-4 text-xs">
+                <div className="font-semibold text-gray-900 dark:text-gray-100">{t.name}</div>
+                <div className="text-gray-500 dark:text-gray-400">{t.title}</div>
+              </footer>
+            </blockquote>
+          ))}
         </div>
       </section>
 

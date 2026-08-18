@@ -1,15 +1,15 @@
 import React from "react";
 
-const nodes = [
+export const cdcNodes = [
   { x: 20, y: 20, w: 150, h: 48, label: "API gateway" },
   { x: 220, y: 20, w: 170, h: 48, label: "Ingestion service" },
-  { x: 440, y: 20, w: 190, h: 48, label: "HL7/eICR rules engine" },
+  { x: 440, y: 20, w: 190, h: 48, label: "Business rules engine" },
   { x: 440, y: 108, w: 190, h: 48, label: "Data store (versioned)" },
   { x: 220, y: 108, w: 170, h: 48, label: "Observability\n(logs · metrics · traces)" },
   { x: 20, y: 108, w: 150, h: 48, label: "Autoscaling +\ncost lifecycle" },
 ];
 
-const edges = [
+export const cdcEdges = [
   [0, 1],
   [1, 2],
   [2, 3],
@@ -33,15 +33,24 @@ function centerTop(n) {
 /**
  * Illustrative architecture diagram — genericized, not a client's real system diagram.
  * `decorative` renders a faint, unlabeled version for use as a background motif.
+ * Pass `nodes`/`edges` to render a different layout; defaults to a generic
+ * ingestion-to-data-store pipeline.
  */
-export default function ArchDiagram({ decorative = false, className = "" }) {
+export default function ArchDiagram({
+  decorative = false,
+  className = "",
+  nodes = cdcNodes,
+  edges = cdcEdges,
+  viewBox = "0 0 660 180",
+  ariaLabel = "Illustrative architecture diagram: API gateway to ingestion service to rules engine to data store, with observability and cost-lifecycle automation alongside",
+}) {
   return (
     <svg
-      viewBox="0 0 660 180"
+      viewBox={viewBox}
       className={className}
       role={decorative ? "presentation" : "img"}
       aria-hidden={decorative || undefined}
-      aria-label={decorative ? undefined : "Illustrative architecture diagram: API gateway to ingestion service to rules engine to data store, with observability and cost-lifecycle automation alongside"}
+      aria-label={decorative ? undefined : ariaLabel}
     >
       <defs>
         <marker id="arch-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">

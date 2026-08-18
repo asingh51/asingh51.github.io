@@ -1,12 +1,34 @@
 export const featured = [
   {
+    title: "Humana — MCP-based Prior Authorization Platform",
+    role: "Staff Software Engineer, Deloitte — Tech Lead",
+    timeframe: "2022–present",
+    bullets: [
+      "Led architecture and delivery of an MCP-based prior authorization platform integrating X12 workflows across 3 enterprise systems.",
+      "Launched MVP in 5 weeks; cut referral processing time by ~20 minutes per case.",
+      "Stack: Node.js, Express, React, AWS, PostgreSQL, Kafka, Docker, Argo CD, Azure DevOps."
+    ]
+  },
+  {
+    title: "State of Illinois — Disease Surveillance System",
+    role: "Staff Software Engineer, Deloitte — Tech Lead",
+    timeframe: "2022–present",
+    slug: "state-of-illinois-disease-surveillance",
+    bullets: [
+      "Designed cloud-native HL7 rule-processing services and AI/RAG pipelines on AWS Bedrock to automate disease detection, eICR/eLR processing, and case triage across 3M+ records.",
+      "Owned event-driven microservices architecture artifacts — UML, sequence diagrams, data-flow diagrams, service contracts — across multiple engineering teams.",
+      "Led execution for a 10+ member team across API design, messaging, and caching; improved operational efficiency by 20%.",
+      "Won 2nd place in Deloitte's 2024 AWS Innovation Challenge and presented the solution at AWS re:Invent to leadership and clients."
+    ]
+  },
+  {
     title: "Vaccine Admin Management System Re‑host (CDC)",
-    role: "Senior Full‑Stack Engineer / Team Lead",
+    role: "Staff Software Engineer, Deloitte — Team Lead",
     timeframe: "2024–2025",
     slug: "cdc-vaccine-system",
     bullets: [
       "Re‑platformed to AWS; improved scalability & resiliency across microservices.",
-      "Cut infra spend by multi‑million with right‑sizing, autoscaling, and S3 lifecycle policies.",
+      "Delivered a rehosted, cloud-optimized HIPAA-compliant system, achieving $50M in cost savings.",
       "Led 6 devs; introduced code review rubric and pairing rotations to raise quality.",
       "Architected service boundaries and SLAs; documented ADRs to ensure alignment.",
       "Instituted observability by default (structured logs, metrics, tracing) across services.",
@@ -14,16 +36,12 @@ export const featured = [
     ]
   },
   {
-    title: "HL7 Rules Engine & eICR GenAI pipeline",
-    role: "Lead Engineer",
-    timeframe: "2024",
+    title: "Meta — Ad Analytics Onboarding Module",
+    role: "Staff Software Engineer, Deloitte",
+    timeframe: "2022–present",
     bullets: [
-      "Designed rules engine for OBX regrouping; reduced processing time by 40%.",
-      "Prototyped Bedrock‑powered extraction achieving 92% F1 on pilot dataset.",
-      "Coordinated with epidemiology SMEs to validate data quality KPIs.",
-      "Developed auditable rules DSL with lineage for OBX regrouping.",
-      "Benchmarked heuristics vs LLM pipeline and set guardrails for productionization.",
-      "Engaged with cross‑functional SMEs to align data models with epidemiology needs."
+      "Built a self-guided onboarding module for Meta's large-scale ad analytics platform.",
+      "Used Hack, React, GraphQL, and the ENT framework to integrate onboarding into existing analytics workflows."
     ]
   },
   {
@@ -43,36 +61,42 @@ export const featured = [
     ]
   },
   {
-    title: "Enterprise Web Applications (Capgemini)",
-    role: "Software Engineer",
-    timeframe: "2014–2016",
+    title: "Procurement & Supply Chain Platforms (John Deere)",
+    role: "Senior Software Engineer",
+    timeframe: "2020–2022",
     bullets: [
-      "Worked on large-scale enterprise applications for global clients.",
-      "Developed REST APIs and UI components using Java/Spring and JavaScript frameworks.",
-      "Collaborated with cross-functional teams to deliver enhancements on time.",
-      "Contributed to code reviews and unit testing to improve code quality."
+      "Engaged 8+ cross-functional teams on a procurement transformation initiative, saving $1.5M in operational costs each year.",
+      "Led collaboration across engineering, procurement, and finance to translate business needs into technology roadmaps.",
+      "Championed infrastructure process improvements, resulting in a 15% increase in team efficiency.",
+      "Stack: Java, Spring Boot, JPA/Hibernate, React, Node.js, AWS, DynamoDB, GraphQL, Docker, Terraform."
+    ]
+  },
+  {
+    title: "Academic Systems Cloud Migration (University of Texas)",
+    role: "Software Developer",
+    timeframe: "2019–2020",
+    bullets: [
+      "Migrated an academic system to the cloud and built a full-stack application, reducing downtime by 30% and improving scalability.",
+      "Partnered with stakeholders across departments to manage databases and servers."
     ]
   },
   {
     title: "Payment Processing Systems (Hitachi Payment Services)",
-    role: "Software Engineer",
-    timeframe: "2016–2018",
+    role: "Software Developer",
+    timeframe: "2018",
     bullets: [
-      "Enhanced secure payment processing platforms handling millions of daily transactions.",
-      "Developed and maintained microservices for transaction authorization and settlement.",
-      "Integrated PCI-DSS compliant features into the payment platform.",
-      "Improved system reliability and uptime through monitoring and incident response."
+      "Built POS transaction services implementing the ISO-8583 protocol.",
+      "Optimized multi-threaded transaction logic to reduce latency on high-volume payment processing."
     ]
   },
   {
-    title: "Procurement & Supply Chain Platforms (John Deere)",
+    title: "Enterprise Manufacturing Systems (Capgemini, for Volvo)",
     role: "Senior Software Engineer",
-    timeframe: "2018–2021",
+    timeframe: "2014–2018",
     bullets: [
-      "Built procurement automation solutions saving ~$1.5M in vendor negotiations.",
-      "Designed microservices with Spring Boot and Hibernate for procurement workflows.",
-      "Optimized CI/CD pipelines and introduced containerization (Docker, Kubernetes).",
-      "Collaborated with product managers and business stakeholders to align delivery with ROI goals."
+      "Built ANDON manufacturing-alert systems for Volvo's automotive plants, reducing business handling effort by up to 30%.",
+      "Delivered enterprise Java/Spring Boot applications for global clients over a 3.5-year engagement.",
+      "Stack: Java, Spring Boot, JUnit, Maven, MySQL, Oracle, Elasticsearch."
     ]
   },
   {

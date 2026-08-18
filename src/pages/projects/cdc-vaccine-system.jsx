@@ -32,7 +32,7 @@ export default function CdcCaseStudy() {
 
         <h1 className="mt-4 text-3xl font-bold">Vaccine Admin Management System Re-host</h1>
         <p className="mt-1 text-gray-500 dark:text-gray-400">
-          Senior Full-Stack Engineer / Team Lead · Deloitte, for the CDC · 2024–2025
+          Staff Software Engineer, Deloitte — Team Lead · for the CDC · 2024–2025
         </p>
       </section>
 
@@ -46,18 +46,19 @@ export default function CdcCaseStudy() {
         <div>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">The problem</h2>
           <p className="mt-2">
-            A public-health vaccine administration system needed to move off aging infrastructure
-            onto AWS — without breaking the live HL7/eICR feeds that epidemiology teams depend on for
-            reporting. There was no maintenance window big enough to "flip a switch": the migration
-            had to happen underneath a system that couldn't stop running.
+            VAMS/Vsafe — the national vaccine administration tooling — was running on aging,
+            HIPAA-compliant infrastructure that had outgrown its original design: data management,
+            reporting, and scalability were all straining at national scale, and there was no
+            maintenance window big enough to "flip a switch." The re-platform had to happen
+            underneath a system that couldn't stop running.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Constraints</h2>
           <ul className="mt-2 list-disc pl-5 space-y-1">
-            <li>Public-health data sensitivity — no room for silent data loss or reporting gaps.</li>
-            <li>Existing HL7/eICR consumers couldn't be broken or re-negotiated mid-migration.</li>
+            <li>HIPAA-compliant data handling — no room for silent data loss or compliance gaps.</li>
+            <li>National-scale reporting consumers couldn't be broken mid-migration.</li>
             <li>Six engineers, one re-platforming effort, running alongside ongoing feature work.</li>
           </ul>
         </div>
@@ -86,8 +87,6 @@ export default function CdcCaseStudy() {
             ADRs so the team could disagree with a specific choice without re-litigating the whole
             migration. I also introduced a code-review rubric and pairing rotations — the goal
             wasn't just to ship the re-platform, but to leave the team able to run it without me.
-            Separately, I designed the HL7 rules engine for OBX regrouping and prototyped a
-            Bedrock-powered extraction pipeline for eICR data alongside the epidemiology SMEs.
           </p>
         </div>
 
@@ -96,18 +95,19 @@ export default function CdcCaseStudy() {
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 rounded-2xl border border-gray-100 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
             <Metric value="99.9%+" label="Uptime achieved" />
             <Metric value="45%↓" label="MTTR reduction" />
-            <Metric value="Multi-million" label="Infra cost cut" />
-            <Metric value="40%↓" label="OBX processing time" />
+            <Metric value="$50M" label="Infra cost saved" />
+            <Metric value="6" label="Engineers led" />
           </div>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">What I learned</h2>
           <p className="mt-2">
-            The hard part wasn't the migration mechanics — it was earning enough trust from the
-            epidemiology SMEs that they'd let us change how OBX segments got regrouped without
-            re-litigating every decision in real time. The ADR habit is what got us there: nobody
-            had to trust my judgment in the moment, just the paper trail behind it.
+            The hard part wasn't the migration mechanics — it was proving each service boundary
+            was safe to cut over without a maintenance window, on a system where "we'll roll it
+            back if something breaks" wasn't an acceptable answer for public-health data. The ADR
+            habit is what made that provable: each cutover had a written rollback plan before it
+            shipped, not one improvised after something went wrong.
           </p>
         </div>
       </section>

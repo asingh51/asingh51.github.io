@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
+import { Link } from "gatsby";
 
 const linkClass =
   "text-brand dark:text-sky-400 underline underline-offset-4 hover:text-brand-dark dark:hover:text-sky-300";
@@ -8,9 +9,25 @@ const linkClass =
 export const Head = () => (
   <Seo
     title="About"
-    description="Abhay (Sunny) Singh — Senior Software Engineer and Tech Lead with 10+ years across healthcare, payments, procurement, and startup product engineering."
+    description="Abhay (Sunny) Singh — Staff Software Engineer and Tech Lead with 10+ years across healthcare, payments, procurement, and startup product engineering."
   />
 );
+
+const achievements = [
+  {
+    title: "2nd place, Deloitte AWS Innovation Challenge (2024)",
+    detail:
+      "Built an AWS Bedrock + Lambda solution to process eICR files via LLMs, presented at AWS re:Invent to Deloitte leadership and clients.",
+  },
+  {
+    title: "AWS Certified Solutions Architect",
+    detail: "Plus a Scrum Team Member certification.",
+  },
+  {
+    title: "2020 Vice President Award, John Deere",
+    detail: "For leading the Agile Operating Model Transformation.",
+  },
+];
 
 export default function About() {
   return (
@@ -26,21 +43,28 @@ export default function About() {
 
         <h1 className="text-center text-3xl font-bold">Abhay (Sunny) Singh</h1>
         <p className="text-center text-gray-500 dark:text-gray-400 mt-1">
-          Senior Software Engineer → Tech Lead
+          Staff Software Engineer → Tech Lead
         </p>
 
         <div className="mt-8 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
           <p>
             I'm a software engineer with over a decade of experience turning ambiguous problems
             into systems that scale, and turning teams into people who can own that scale
-            themselves. I currently lead engineering work at{" "}
+            themselves. Since 2022 I've been a Staff Software Engineer at{" "}
             <a href="https://www2.deloitte.com" target="_blank" rel="noopener noreferrer" className={linkClass}>
               Deloitte
             </a>
-            , where I've re-platformed a CDC vaccine administration system onto AWS, cut
-            multi-million dollars in infrastructure spend through right-sizing and lifecycle
-            automation, and built an HL7/eICR processing pipeline — including a GenAI-assisted
-            extraction prototype — used to support public health reporting.
+            , working as a tech lead across several client engagements at once: re-platforming a{" "}
+            <Link to="/projects/cdc-vaccine-system" className={linkClass}>
+              CDC vaccine administration system
+            </Link>{" "}
+            onto AWS for $50M in cost savings, leading a 10-person team on a{" "}
+            <Link to="/projects/state-of-illinois-disease-surveillance" className={linkClass}>
+              disease surveillance platform
+            </Link>{" "}
+            for the State of Illinois that won 2nd place in Deloitte's AWS Innovation Challenge, building a
+            prior-authorization platform for Humana that shipped an MVP in 5 weeks, and delivering an
+            onboarding module for Meta's ad analytics platform.
           </p>
 
           <p>
@@ -48,23 +72,22 @@ export default function About() {
             <a href="https://www.deere.com" target="_blank" rel="noopener noreferrer" className={linkClass}>
               John Deere
             </a>{" "}
-            building procurement automation that saved roughly $1.5M in vendor negotiations,
-            at{" "}
+            building procurement automation that saved $1.5M a year in operational costs, went back to{" "}
+            the University of Texas as a software developer migrating an academic system to the cloud, at{" "}
             <a href="https://www.hitachi-payments.com" target="_blank" rel="noopener noreferrer" className={linkClass}>
               Hitachi Payment Services
             </a>{" "}
-            hardening payment platforms that processed millions of daily transactions under
-            PCI-DSS constraints, and at{" "}
+            building POS transaction services on the ISO-8583 protocol, and at{" "}
             <a href="https://www.capgemini.com" target="_blank" rel="noopener noreferrer" className={linkClass}>
               Capgemini
             </a>{" "}
-            delivering enterprise web applications for global clients. In parallel, I've been
+            building manufacturing-alert systems for Volvo's automotive plants. In parallel, I've been
             building{" "}
-            <a href="https://github.com/asingh51" target="_blank" rel="noopener noreferrer" className={linkClass}>
+            <Link to="/projects/jobminglr" className={linkClass}>
               JobMinglr
-            </a>
-            , a swipe-to-match hiring platform, as founder and tech lead — which keeps me
-            honest about shipping product end-to-end, not just architecting it.
+            </Link>
+            , a swipe-to-match hiring platform now serving 180,000+ jobs, as founder and tech lead —
+            which keeps me honest about shipping product end-to-end, not just architecting it.
           </p>
 
           <p>
@@ -75,14 +98,28 @@ export default function About() {
             Science from the University of Texas at Arlington, specializing in web, mobile, and
             AI systems.
           </p>
+        </div>
 
+        <div className="mt-10 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/60 p-6">
+          <h2 className="text-lg font-semibold">Achievements</h2>
+          <ul className="mt-3 space-y-3 text-sm">
+            {achievements.map((a) => (
+              <li key={a.title}>
+                <div className="font-medium text-gray-900 dark:text-gray-100">{a.title}</div>
+                <div className="text-gray-600 dark:text-gray-400">{a.detail}</div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-8 text-gray-700 dark:text-gray-300 leading-relaxed">
           <p>
             I'm currently looking at Tech Lead roles — the kind where I own a system end-to-end
             and help a team scale with it — and I'm comfortable in TPM-adjacent work when a role
             calls for it. If that sounds like a fit, take a look at the{" "}
-            <a href="/projects" className={linkClass}>project case studies</a> and{" "}
-            <a href="/leadership" className={linkClass}>leadership playbook</a>, check my{" "}
-            <a href="/resume" className={linkClass}>resume and availability</a>, or{" "}
+            <Link to="/projects" className={linkClass}>project case studies</Link> and{" "}
+            <Link to="/leadership" className={linkClass}>leadership playbook</Link>, check my{" "}
+            <Link to="/resume" className={linkClass}>resume and availability</Link>, or{" "}
             <a href="mailto:abhaysingh200009@gmail.com" className={linkClass}>
               reach out directly
             </a>
