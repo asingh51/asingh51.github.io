@@ -1,8 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEOComponent = ({ title, description }) => {
+const Seo = ({ title, description }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -22,12 +21,19 @@ const SEOComponent = ({ title, description }) => {
   const image = `${meta.siteUrl}/images/profile.png`;
 
   return (
-    <Helmet>
+    <>
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#ffffff" />
+      <meta name="color-scheme" content="light dark" />
       <link rel="icon" href="/images/profile.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={pageTitle} />
@@ -40,8 +46,20 @@ const SEOComponent = ({ title, description }) => {
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:image" content={image} />
-    </Helmet>
+
+      <script>{`
+        (function () {
+          try {
+            var stored = localStorage.getItem("theme");
+            var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (stored === "dark" || (!stored && prefersDark)) {
+              document.documentElement.classList.add("dark");
+            }
+          } catch (e) {}
+        })();
+      `}</script>
+    </>
   );
 };
 
-export default SEOComponent;
+export default Seo;

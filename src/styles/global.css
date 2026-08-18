@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global tweaks */
-html, body { @apply bg-white text-gray-800; }
-.prose a { @apply underline underline-offset-4; }
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  @apply bg-white text-gray-800 font-sans antialiased dark:bg-gray-950 dark:text-gray-200;
+}
+
+body, body * {
+  @apply transition-colors duration-200;
+}

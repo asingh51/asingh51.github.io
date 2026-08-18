@@ -9,7 +9,6 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-react-helmet`,
   ]
 }
 
