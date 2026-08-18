@@ -1,5 +1,21 @@
 export const featured = [
   {
+    title: "JobMinglr — Swipe‑to‑match hiring platform",
+    role: "Founder / Tech Lead",
+    timeframe: "2023–present",
+    slug: "jobminglr",
+    liveUrl: "https://jobminglr.com/",
+    bullets: [
+      "Built React/Gatsby front‑end, Node/Express API, and AWS infra (S3, Lambda, CFN).",
+      "Designed resume‑matching heuristics (skills, salary, location) and ATS integration.",
+      "Drove 20% faster screening for pilot recruiters; 15% better candidate fit.",
+      "Integrated with ATS platforms like Pinpoint and Greenhouse to sync candidates.",
+      "Implemented pilot metrics: conversion, fit score lift, time‑to‑screen improvements.",
+      "Led product/engineering roadmap; balanced feature delivery with cost constraints.",
+      "Explored GenAI‑powered resume parsing and ranking to improve candidate matching."
+    ]
+  },
+  {
     title: "Humana — MCP-based Prior Authorization Platform",
     role: "Staff Software Engineer, Deloitte — Tech Lead",
     timeframe: "2022–present",
@@ -42,22 +58,6 @@ export const featured = [
     bullets: [
       "Built a self-guided onboarding module for Meta's large-scale ad analytics platform.",
       "Used Hack, React, GraphQL, and the ENT framework to integrate onboarding into existing analytics workflows."
-    ]
-  },
-  {
-    title: "JobMinglr — Swipe‑to‑match hiring platform",
-    role: "Founder / Tech Lead",
-    timeframe: "2023–present",
-    slug: "jobminglr",
-    liveUrl: "https://jobminglr.com/",
-    bullets: [
-      "Built React/Gatsby front‑end, Node/Express API, and AWS infra (S3, Lambda, CFN).",
-      "Designed resume‑matching heuristics (skills, salary, location) and ATS integration.",
-      "Drove 20% faster screening for pilot recruiters; 15% better candidate fit.",
-      "Integrated with ATS platforms like Pinpoint and Greenhouse to sync candidates.",
-      "Implemented pilot metrics: conversion, fit score lift, time‑to‑screen improvements.",
-      "Led product/engineering roadmap; balanced feature delivery with cost constraints.",
-      "Explored GenAI‑powered resume parsing and ranking to improve candidate matching."
     ]
   },
   {
