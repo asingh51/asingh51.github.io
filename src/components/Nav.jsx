@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { Briefcase, Network, User, Menu, X } from "lucide-react";
+import { Briefcase, Network, User, PenLine, Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const activeClassName = "text-brand dark:text-sky-400";
@@ -31,6 +31,14 @@ const Nav = () => {
             >
               <Network size={16} />
               Leadership
+            </Link>
+            <Link
+              to="/writing"
+              activeClassName={activeClassName}
+              className="flex items-center gap-2 hover:text-brand dark:hover:text-sky-400"
+            >
+              <PenLine size={16} />
+              Writing
             </Link>
             <Link
               to="/about"
@@ -69,6 +77,9 @@ const Nav = () => {
             </Link>
             <Link to="/leadership" className="block" onClick={() => setOpen(false)}>
               Leadership
+            </Link>
+            <Link to="/writing" className="block" onClick={() => setOpen(false)}>
+              Writing
             </Link>
             <Link to="/about" className="block" onClick={() => setOpen(false)}>
               About

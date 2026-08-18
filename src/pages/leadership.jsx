@@ -1,6 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
+import { Link } from "gatsby";
+
+const postLinkClass =
+  "mt-4 inline-block text-sm font-medium text-brand dark:text-sky-400 hover:underline underline-offset-4";
 
 export const Head = () => <Seo title="Leadership" />;
 
@@ -93,6 +97,9 @@ export default function Leadership() {
             <ul className="list-disc pl-5 mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
               {mentoring.map((m, i) => (<li key={i}>{m}</li>))}
             </ul>
+            <Link to="/writing/the-30-60-90-mentorship-playbook" className={postLinkClass}>
+              Read the full playbook, week by week →
+            </Link>
           </div>
 
           <div className="rounded-xl border border-gray-100 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
@@ -100,6 +107,9 @@ export default function Leadership() {
             <ul className="list-disc pl-5 mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
               {delivery.map((d, i) => (<li key={i}>{d}</li>))}
             </ul>
+            <Link to="/writing/why-fridays-are-for-demos" className={postLinkClass}>
+              Read what a Friday demo actually caught →
+            </Link>
           </div>
         </div>
 
@@ -109,6 +119,9 @@ export default function Leadership() {
             <ul className="list-disc pl-5 mt-3 space-y-2 text-sm text-gray-600 dark:text-gray-300">
               {adr.map((a, i) => (<li key={i}>{a}</li>))}
             </ul>
+            <Link to="/writing/adrs-that-survive-contact-with-reality" className={postLinkClass}>
+              Read a real ADR from the CDC project →
+            </Link>
           </div>
 
           <div className="rounded-xl border border-gray-100 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
@@ -138,8 +151,11 @@ export default function Leadership() {
         <div className="rounded-xl border border-gray-100 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900/60 mt-8">
           <h2 className="text-lg font-semibold">Working With Me</h2>
           <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-            I’m happy to share example ADRs, review checklists, on-call runbooks, and dashboards from prior projects (redacted as needed).
-            If you’re evaluating me for a Tech Lead role, I can walk through a system design and my delivery playbook end-to-end.
+            The <Link to="/writing" className="text-brand dark:text-sky-400 underline underline-offset-4">writing section</Link>{" "}
+            has a real ADR and a real incident the demo cadence caught — not just a description of
+            the process. I'm happy to go deeper on review checklists, on-call runbooks, and
+            dashboards from prior projects (redacted as needed) if you're evaluating me for a Tech
+            Lead role.
           </p>
         </div>
       </section>

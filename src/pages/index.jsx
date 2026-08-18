@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
+import ArchDiagram from "../components/ArchDiagram";
 
 export const Head = () => <Seo />;
 
@@ -13,6 +14,10 @@ export default function Home() {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-brand/20 blur-3xl dark:bg-sky-500/10"
+        />
+        <ArchDiagram
+          decorative
+          className="pointer-events-none absolute bottom-4 right-0 w-[420px] max-w-none hidden lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 pt-16 pb-10 grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
@@ -33,6 +38,15 @@ export default function Home() {
               Core stack: React, Java/Spring, AWS, PostgreSQL. Recently: HL7 processing, GenAI pilots, cost-optimization.
             </p>
 
+            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl">
+              I'm looking for Series B+ product companies working with regulated or high-stakes
+              data — healthcare, fintech, or infrastructure — where a Tech Lead owns systems
+              end-to-end for a team of 5–15 engineers.
+            </p>
+            <p className="mt-2 text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500">
+              Open to: full-time · remote (US) or hybrid from Austin, TX · not seeking full-time onsite
+            </p>
+
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 to="/projects"
@@ -44,7 +58,7 @@ export default function Home() {
                 to="/resume"
                 className="rounded-xl border border-gray-200 dark:border-gray-700 px-5 py-3 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition"
               >
-                See Resume (Password)
+                View Resume
               </Link>
             </div>
           </div>
@@ -84,24 +98,26 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="rounded-2xl bg-gray-50 dark:bg-gray-900/60 p-8 border border-gray-100 dark:border-gray-800">
           <h2 className="text-xl font-semibold">Focus Areas</h2>
+          <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">Each tag links to the case study or post that backs it up.</p>
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
             {[
-              "System design",
-              "Service contracts & SLAs",
-              "Observability (logs/metrics/traces)",
-              "Resiliency (retries/DLQ/circuit breakers)",
-              "CI/CD & release hygiene",
-              "Cost-aware architectures",
-              "Mentorship & review rubrics",
-              "HL7/eICR & public health data",
-              "GenAI pilots (Bedrock)",
-            ].map((t) => (
-              <span
+              { t: "System design", to: "/projects/cdc-vaccine-system" },
+              { t: "Service contracts & SLAs", to: "/projects/cdc-vaccine-system" },
+              { t: "Observability (logs/metrics/traces)", to: "/projects/cdc-vaccine-system" },
+              { t: "Resiliency (retries/DLQ/circuit breakers)", to: "/projects/cdc-vaccine-system" },
+              { t: "CI/CD & release hygiene", to: "/writing/why-fridays-are-for-demos" },
+              { t: "Cost-aware architectures", to: "/writing/adrs-that-survive-contact-with-reality" },
+              { t: "Mentorship & review rubrics", to: "/writing/the-30-60-90-mentorship-playbook" },
+              { t: "HL7/eICR & public health data", to: "/projects/cdc-vaccine-system" },
+              { t: "GenAI pilots (Bedrock)", to: "/projects/cdc-vaccine-system" },
+            ].map(({ t, to }) => (
+              <Link
                 key={t}
-                className="rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1"
+                to={to}
+                className="rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1 hover:border-brand hover:text-brand dark:hover:border-sky-400 dark:hover:text-sky-400 transition"
               >
                 {t}
-              </span>
+              </Link>
             ))}
           </div>
         </div>

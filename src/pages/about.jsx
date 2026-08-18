@@ -77,10 +77,12 @@ export default function About() {
           </p>
 
           <p>
-            I'm currently looking at Tech Lead and TPM-adjacent roles where I can own systems
-            end-to-end and help a team scale with them. If that sounds like a fit, take a look
-            at the <a href="/projects" className={linkClass}>project case studies</a> and{" "}
-            <a href="/leadership" className={linkClass}>leadership playbook</a>, or{" "}
+            I'm currently looking at Tech Lead roles — the kind where I own a system end-to-end
+            and help a team scale with it — and I'm comfortable in TPM-adjacent work when a role
+            calls for it. If that sounds like a fit, take a look at the{" "}
+            <a href="/projects" className={linkClass}>project case studies</a> and{" "}
+            <a href="/leadership" className={linkClass}>leadership playbook</a>, check my{" "}
+            <a href="/resume" className={linkClass}>resume and availability</a>, or{" "}
             <a href="mailto:abhaysingh200009@gmail.com" className={linkClass}>
               reach out directly
             </a>

@@ -3,6 +3,7 @@ export const featured = [
     title: "Vaccine Admin Management System Re‑host (CDC)",
     role: "Senior Full‑Stack Engineer / Team Lead",
     timeframe: "2024–2025",
+    slug: "cdc-vaccine-system",
     bullets: [
       "Re‑platformed to AWS; improved scalability & resiliency across microservices.",
       "Cut infra spend by multi‑million with right‑sizing, autoscaling, and S3 lifecycle policies.",
@@ -29,6 +30,8 @@ export const featured = [
     title: "JobMinglr — Swipe‑to‑match hiring platform",
     role: "Founder / Tech Lead",
     timeframe: "2023–present",
+    slug: "jobminglr",
+    liveUrl: "https://jobminglr.com/",
     bullets: [
       "Built React/Gatsby front‑end, Node/Express API, and AWS infra (S3, Lambda, CFN).",
       "Designed resume‑matching heuristics (skills, salary, location) and ATS integration.",
