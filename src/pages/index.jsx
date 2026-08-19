@@ -28,7 +28,7 @@ export default function Home() {
               transition={{ duration: 0.35 }}
               className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight"
             >
-              Staff Software Engineer → <span className="text-brand dark:text-sky-400">Tech Lead</span>
+              Software Engineer → <span className="text-brand dark:text-sky-400">Engineering Lead</span>
             </motion.h1>
 
             <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl">
@@ -36,7 +36,11 @@ export default function Home() {
               and grow engineers through clear processes and mentorship.
             </p>
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">
-              Core stack: React, Java/Spring, AWS, PostgreSQL. Recently: HL7 processing, GenAI pilots, cost-optimization.
+              Core stack: React, Java/Spring, Javascript, Python, AWS, PostgreSQL, MongoDB.
+            </p>
+
+            <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">
+              Recently: HL7 processing, GenAI pilots, cost-optimization.
             </p>
 
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -67,24 +71,14 @@ export default function Home() {
             </div>
           </div>
 
-          <motion.div
+          <motion.img
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.35 }}
-            className="hidden sm:block relative justify-self-center"
-          >
-            <img
-              src="/images/profile.png"
-              alt="Abhay Singh"
-              className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg"
-            />
-            <img
-              src="/images/sticker.jpeg"
-              alt=""
-              aria-hidden="true"
-              className="absolute -bottom-3 -right-4 h-14 w-auto md:h-16 rounded-lg shadow-lg rotate-[-10deg] ring-2 ring-white dark:ring-gray-900"
-            />
-          </motion.div>
+            src="/images/Sticker2.png"
+            alt="Abhay Singh"
+            className="hidden sm:block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg justify-self-center"
+          />
         </div>
       </section>
 

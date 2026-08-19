@@ -6,8 +6,9 @@ import Seo from "../components/SEO";
 export const Head = () => <Seo title="Resume" />;
 
 const TECH_LEAD = { key: "tech-lead", title: "Tech Lead Resume", file: "/resumes/team-lead.pdf" };
+const RESUME = { key: "resume", title: "Resume", file: "/resumes/Abhay Resume-J.pdf" };
 const TPM = { key: "tpm", title: "TPM Resume", file: "/resumes/tpm.pdf" };
-const PROFILES = { [TECH_LEAD.key]: TECH_LEAD, [TPM.key]: TPM };
+const PROFILES = { [RESUME.key]: RESUME, [TECH_LEAD.key]: TECH_LEAD, [TPM.key]: TPM };
 const PASSWORD_MAP = { tpm: TPM };
 
 function ResumeViewer({ profile, compact }) {
@@ -95,7 +96,7 @@ function ResumeHome() {
           Open to: full-time · remote (US) or hybrid from Austin, TX · not seeking full-time onsite.
         </p>
       </section>
-      <ResumeViewer profile={TECH_LEAD} compact />
+      <ResumeViewer profile={RESUME} compact />
       <section className="max-w-3xl mx-auto px-6 pb-24">
         <TpmGate />
       </section>
