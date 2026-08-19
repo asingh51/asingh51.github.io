@@ -90,11 +90,12 @@ export const featured = [
     ]
   },
   {
-    title: "Enterprise Manufacturing Systems (Capgemini, for Volvo)",
+    title: "Enterprise Manufacturing & Logistics Systems (Capgemini, for Volvo)",
     role: "Senior Software Engineer",
     timeframe: "2014–2018",
     bullets: [
-      "Built ANDON manufacturing-alert systems for Volvo's automotive plants, reducing business handling effort by up to 30%.",
+      "Built ANDON, a real-time manufacturing-alert system for Volvo's automotive plants, reducing business handling effort by up to 30%.",
+      "Built INET, a logistics management system for the same Volvo engagement.",
       "Delivered enterprise Java/Spring Boot applications for global clients over a 3.5-year engagement.",
       "Stack: Java, Spring Boot, JUnit, Maven, MySQL, Oracle, Elasticsearch."
     ]

@@ -27,6 +27,11 @@ const achievements = [
     title: "2020 Vice President Award, John Deere",
     detail: "For leading the Agile Operating Model Transformation.",
   },
+  {
+    title: "Published researcher, image retrieval",
+    detail:
+      "Co-authored \"A Survey on Different CBIR Techniques\" in the International Journal of Computer Science and Information Technologies, based on undergraduate research fusing panchromatic and multispectral satellite imagery via PCA transformation.",
+  },
 ];
 
 export default function About() {
@@ -96,7 +101,8 @@ export default function About() {
             built in from day one instead of bolted on after an incident, and mentorship that's
             measured by whether people grow past needing me. I hold a Master's in Computer
             Science from the University of Texas at Arlington, specializing in web, mobile, and
-            AI systems.
+            AI systems — building on an Electronics & Telecommunications undergrad and a published
+            paper on content-based image retrieval.
           </p>
         </div>
 
