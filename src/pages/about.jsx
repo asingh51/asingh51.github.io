@@ -48,7 +48,7 @@ export default function About() {
 
         <h1 className="text-center text-3xl font-bold">Abhay (Sunny) Singh</h1>
         <p className="text-center text-gray-500 dark:text-gray-400 mt-1">
-          Staff Software Engineer → Tech Lead
+          Software Engineer → Engineering Lead
         </p>
 
         <div className="mt-8 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -68,8 +68,12 @@ export default function About() {
               disease surveillance platform
             </Link>{" "}
             for the State of Illinois that won 2nd place in Deloitte's AWS Innovation Challenge, building a
-            prior-authorization platform for Humana that shipped an MVP in 5 weeks, and delivering an
-            onboarding module for Meta's ad analytics platform.
+            prior-authorization platform for Humana — EHR-integrated tools that match referrals to the
+            right in-network specialist, validate ICD-10/procedure codes and eligibility, and submit
+            authorizations to Availity as X12 278 transactions — that shipped an MVP in 5 weeks, and
+            delivering the onboarding module for Meta's Advanced Analytics platform, which lets advertisers
+            build custom audience models on Facebook, Instagram, and Audience Network data using React,
+            Hack, GraphQL, and Meta's internal Ent/Thrift stack.
           </p>
 
           <p>

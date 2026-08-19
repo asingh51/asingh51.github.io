@@ -40,7 +40,7 @@ export default function Home() {
             </p>
 
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">
-              Recently: HL7 processing, GenAI pilots, cost-optimization.
+              Recently: X12, HL7 processing, GenAI pilots, cost-optimization.
             </p>
 
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl">

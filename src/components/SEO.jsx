@@ -18,7 +18,7 @@ const Seo = ({ title, description }) => {
   const meta = site.siteMetadata;
   const pageTitle = title ? `${title} — Abhay Singh` : meta.title;
   const pageDescription = description || meta.description;
-  const image = `${meta.siteUrl}/images/profile.png`;
+  const image = `${meta.siteUrl}/images/Sticker2.png`;
 
   return (
     <>
@@ -27,7 +27,7 @@ const Seo = ({ title, description }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="color-scheme" content="light dark" />
-      <link rel="icon" href="/images/profile.png" />
+      <link rel="icon" href="/images/Sticker2.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link

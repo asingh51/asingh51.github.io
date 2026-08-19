@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import { Link } from "gatsby";
+import { Lock } from "lucide-react";
+import RequestPasscodeButton from "../components/RequestPasscodeButton";
+import { verifyPasscode } from "../utils/passcode";
+
+const CODE = "lead";
+const PAGE_ID = "leadership";
 
 const postLinkClass =
   "mt-4 inline-block text-sm font-medium text-brand dark:text-sky-400 hover:underline underline-offset-4";
@@ -61,9 +67,55 @@ const kpis = [
   "People: onboarding time to first PR, promotion velocity, team eNPS."
 ];
 
-export default function Leadership() {
+function Gate({ onUnlock }) {
+  const [pwd, setPwd] = useState("");
+  const [error, setError] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const code = pwd.trim();
+    if (code.toLowerCase() === CODE || verifyPasscode(PAGE_ID, code)) {
+      onUnlock();
+      return;
+    }
+    setError("Invalid code.");
+  };
+
   return (
-    <Layout>
+    <section className="max-w-md mx-auto px-6 pt-16 pb-24">
+      <div className="flex items-center gap-2 text-gray-900 dark:text-gray-100">
+        <Lock size={18} />
+        <h1 className="text-xl font-semibold">This page is locked</h1>
+      </div>
+      <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+        Ask for the code if you're a recruiter or hiring manager evaluating this work.
+      </p>
+
+      <form onSubmit={onSubmit} className="mt-5 flex gap-2">
+        <input
+          type="password"
+          placeholder="Code"
+          value={pwd}
+          onChange={(e) => setPwd(e.target.value)}
+          className="flex-1 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2"
+        />
+        <button
+          type="submit"
+          className="bg-brand text-white px-4 py-2 rounded-xl font-semibold hover:bg-brand-dark transition"
+        >
+          Unlock
+        </button>
+      </form>
+      {error && <p className="text-red-600 dark:text-red-400 text-sm mt-2">{error}</p>}
+      <div className="mt-3">
+        <RequestPasscodeButton pageId={PAGE_ID} pageLabel="Leadership page" />
+      </div>
+    </section>
+  );
+}
+
+function LeadershipContent() {
+  return (
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-16">
         <h1 className="text-3xl font-bold">Leadership</h1>
         <p className="mt-3 text-gray-700 dark:text-gray-300">
@@ -159,6 +211,15 @@ export default function Leadership() {
           </p>
         </div>
       </section>
+  );
+}
+
+export default function LeadershipPage() {
+  const [unlocked, setUnlocked] = useState(false);
+
+  return (
+    <Layout>
+      {unlocked ? <LeadershipContent /> : <Gate onUnlock={() => setUnlocked(true)} />}
     </Layout>
   );
 }
