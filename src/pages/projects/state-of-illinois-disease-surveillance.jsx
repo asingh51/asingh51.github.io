@@ -91,6 +91,16 @@ export default function IllinoisCaseStudy() {
           <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
             Illustrative architecture — genericized for confidentiality.
           </p>
+          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+            More implementation detail on the HL7 pipeline itself is written up in a{" "}
+            <Link
+              to="/writing/hl7-elr-pipeline-architecture"
+              className="underline underline-offset-4 hover:text-brand dark:hover:text-sky-400"
+            >
+              password-protected note
+            </Link>{" "}
+            — ask if you're evaluating this work.
+          </p>
         </div>
 
         <div>

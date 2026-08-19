@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Router, navigate } from "@reach/router";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
+import RequestPasscodeButton from "../components/RequestPasscodeButton";
+import { verifyPasscode } from "../utils/passcode";
 
 export const Head = () => <Seo title="Resume" />;
 
@@ -45,12 +47,17 @@ function TpmGate() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const profile = PASSWORD_MAP[pwd.trim()];
-    if (!profile) {
-      setError("Invalid code.");
+    const code = pwd.trim();
+    const profile = PASSWORD_MAP[code];
+    if (profile) {
+      navigate(`/resume/${profile.key}`);
       return;
     }
-    navigate(`/resume/${profile.key}`);
+    if (verifyPasscode("resume-tpm", code)) {
+      navigate(`/resume/${TPM.key}`);
+      return;
+    }
+    setError("Invalid code.");
   };
 
   if (!open) {
@@ -83,6 +90,9 @@ function TpmGate() {
         </button>
       </form>
       {error && <p className="text-red-600 dark:text-red-400 text-sm mt-2">{error}</p>}
+      <div className="mt-2">
+        <RequestPasscodeButton pageId="resume-tpm" pageLabel="TPM resume" />
+      </div>
     </div>
   );
 }
