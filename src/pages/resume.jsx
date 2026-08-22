@@ -103,7 +103,7 @@ function ResumeHome() {
       <section className="max-w-3xl mx-auto px-6 pt-12 pb-2">
         <h1 className="text-2xl font-bold">Resume</h1>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-          Open to: full-time · remote (US) or hybrid from Austin, TX · not seeking full-time onsite.
+          Open to: full-time · remote (US) or hybrid from Austin, TX.
         </p>
       </section>
       <ResumeViewer profile={RESUME} compact />

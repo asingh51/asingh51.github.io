@@ -49,7 +49,7 @@ export default function Home() {
               end-to-end for a team of 5–15 engineers.
             </p>
             <p className="mt-2 text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500">
-              Open to: full-time · remote (US) or hybrid from Austin, TX · not seeking full-time onsite
+              Open to: full-time · remote (US) or hybrid from Austin, TX
             </p>
             <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
               👋 Say hi — always up for talking systems design, career pivots, or good taco spots in Austin.
