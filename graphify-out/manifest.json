@@ -1,0 +1,272 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1787085138.1406693,
+    "seen": 1788491668.014209,
+    "ast_hash": "020c3d6c981a53c7637291255f2ce676",
+    "semantic_hash": "020c3d6c981a53c7637291255f2ce676"
+  },
+  "gatsby-browser.js": {
+    "mtime": 1787072728.3426669,
+    "seen": 1788491668.014213,
+    "ast_hash": "8abc52f6fed9311c25b8bbf9d817ca7d",
+    "semantic_hash": "8abc52f6fed9311c25b8bbf9d817ca7d"
+  },
+  "gatsby-config.ts": {
+    "mtime": 1787084362.4805171,
+    "seen": 1788491668.014215,
+    "ast_hash": "b92f99520d805bd66c55c10a0caf58ef",
+    "semantic_hash": "b92f99520d805bd66c55c10a0caf58ef"
+  },
+  "gatsby-node.js": {
+    "mtime": 1787072728.3427856,
+    "seen": 1788491668.014216,
+    "ast_hash": "cf57e18c995832e1ebae68bc4f8ffe5e",
+    "semantic_hash": "cf57e18c995832e1ebae68bc4f8ffe5e"
+  },
+  "package.json": {
+    "mtime": 1787163352.4214094,
+    "seen": 1788491668.014218,
+    "ast_hash": "7a35fa01ddd19fbd321299fefb266bab",
+    "semantic_hash": "7a35fa01ddd19fbd321299fefb266bab"
+  },
+  "postcss.config.js": {
+    "mtime": 1787072735.1622763,
+    "seen": 1788491668.014218,
+    "ast_hash": "8640f9b2e6475cc3f5b1ff4548925765",
+    "semantic_hash": "8640f9b2e6475cc3f5b1ff4548925765"
+  },
+  "src/components/ArchDiagram.jsx": {
+    "mtime": 1787084489.03377,
+    "seen": 1788491668.014219,
+    "ast_hash": "7ca66e6ac5a28cded308c4127a586f5c",
+    "semantic_hash": "7ca66e6ac5a28cded308c4127a586f5c"
+  },
+  "src/components/Footer.jsx": {
+    "mtime": 1787077374.745654,
+    "seen": 1788491668.01422,
+    "ast_hash": "bccb19b832d097e656b6051fc35b6566",
+    "semantic_hash": "bccb19b832d097e656b6051fc35b6566"
+  },
+  "src/components/ImpactCard.jsx": {
+    "mtime": 1787080878.1801543,
+    "seen": 1788491668.014221,
+    "ast_hash": "15258802b02b50693d5288a8bd216253",
+    "semantic_hash": "15258802b02b50693d5288a8bd216253"
+  },
+  "src/components/Layout.jsx": {
+    "mtime": 1787072735.2027833,
+    "seen": 1788491668.0142221,
+    "ast_hash": "58e1b9d50a3c4e10e2333c357ab00e33",
+    "semantic_hash": "58e1b9d50a3c4e10e2333c357ab00e33"
+  },
+  "src/components/Nav.jsx": {
+    "mtime": 1787081235.4878545,
+    "seen": 1788491668.014223,
+    "ast_hash": "5cda31955b96decbc8e84909b52bdca0",
+    "semantic_hash": "5cda31955b96decbc8e84909b52bdca0"
+  },
+  "src/components/PostLayout.jsx": {
+    "mtime": 1787081145.549674,
+    "seen": 1788491668.0142238,
+    "ast_hash": "59e09cab854b6cb7ad829b39874b9a01",
+    "semantic_hash": "59e09cab854b6cb7ad829b39874b9a01"
+  },
+  "src/components/RequestPasscodeButton.jsx": {
+    "mtime": 1787163443.9793732,
+    "seen": 1788491668.014225,
+    "ast_hash": "a060dd1f443860783989126028cd52d7",
+    "semantic_hash": "a060dd1f443860783989126028cd52d7"
+  },
+  "src/components/SEO.jsx": {
+    "mtime": 1787168407.655953,
+    "seen": 1788491668.014225,
+    "ast_hash": "7e4bf1bfbb669b62826c74f2ef94a01c",
+    "semantic_hash": "7e4bf1bfbb669b62826c74f2ef94a01c"
+  },
+  "src/components/ThemeToggle.jsx": {
+    "mtime": 1787077354.2205255,
+    "seen": 1788491668.014226,
+    "ast_hash": "b2154cfb75826ac8ef3adc5bc3f8fe31",
+    "semantic_hash": "b2154cfb75826ac8ef3adc5bc3f8fe31"
+  },
+  "src/data/projects.js": {
+    "mtime": 1787168159.5549488,
+    "seen": 1788491668.014227,
+    "ast_hash": "8cc9877c4d11bcc16717466070a87d28",
+    "semantic_hash": "8cc9877c4d11bcc16717466070a87d28"
+  },
+  "src/data/testimonials.js": {
+    "mtime": 1787084267.8005748,
+    "seen": 1788491668.0142279,
+    "ast_hash": "85f53063b1164364948fae11bbb103c5",
+    "semantic_hash": "85f53063b1164364948fae11bbb103c5"
+  },
+  "src/data/writing.js": {
+    "mtime": 1787081122.5169187,
+    "seen": 1788491668.014229,
+    "ast_hash": "7725b8dc1f1d0d2aa1dab0acb862bcb2",
+    "semantic_hash": "7725b8dc1f1d0d2aa1dab0acb862bcb2"
+  },
+  "src/pages/404.jsx": {
+    "mtime": 1787077631.1234195,
+    "seen": 1788491668.01423,
+    "ast_hash": "7366681fb3cf5340b50af8b05ad38daa",
+    "semantic_hash": "7366681fb3cf5340b50af8b05ad38daa"
+  },
+  "src/pages/about.jsx": {
+    "mtime": 1787168393.3076725,
+    "seen": 1788491668.014231,
+    "ast_hash": "731f107acd4d4c1e2e31cdba72558ea3",
+    "semantic_hash": "731f107acd4d4c1e2e31cdba72558ea3"
+  },
+  "src/pages/index.jsx": {
+    "mtime": 1787373239.9978898,
+    "seen": 1788491668.014231,
+    "ast_hash": "a869254197834f864e66b9607aa3fa58",
+    "semantic_hash": "a869254197834f864e66b9607aa3fa58"
+  },
+  "src/pages/leadership.jsx": {
+    "mtime": 1787168206.2371662,
+    "seen": 1788491668.0142322,
+    "ast_hash": "8eb29263bd8928e542f8fc072595980a",
+    "semantic_hash": "8eb29263bd8928e542f8fc072595980a"
+  },
+  "src/pages/projects.jsx": {
+    "mtime": 1787077625.246348,
+    "seen": 1788491668.014233,
+    "ast_hash": "a63db142c6aed5085c652699d40d3d0a",
+    "semantic_hash": "a63db142c6aed5085c652699d40d3d0a"
+  },
+  "src/pages/projects/cdc-vaccine-system.jsx": {
+    "mtime": 1787084504.2825425,
+    "seen": 1788491668.014234,
+    "ast_hash": "0a8b695a22a1eccb12d3722eff0fdc04",
+    "semantic_hash": "0a8b695a22a1eccb12d3722eff0fdc04"
+  },
+  "src/pages/projects/jobminglr.jsx": {
+    "mtime": 1787080928.5647802,
+    "seen": 1788491668.0142348,
+    "ast_hash": "d969f034a1a70559338ba71ec2bbce9a",
+    "semantic_hash": "d969f034a1a70559338ba71ec2bbce9a"
+  },
+  "src/pages/projects/state-of-illinois-disease-surveillance.jsx": {
+    "mtime": 1787161181.7890549,
+    "seen": 1788491668.014236,
+    "ast_hash": "e2675e7d0525312787b6c5b57484342f",
+    "semantic_hash": "e2675e7d0525312787b6c5b57484342f"
+  },
+  "src/pages/resume.jsx": {
+    "mtime": 1787373245.2292893,
+    "seen": 1788491668.014237,
+    "ast_hash": "a7ef4d1d04102ab955a4f45db3e92a5d",
+    "semantic_hash": "a7ef4d1d04102ab955a4f45db3e92a5d"
+  },
+  "src/pages/writing/adrs-that-survive-contact-with-reality.jsx": {
+    "mtime": 1787081166.876398,
+    "seen": 1788491668.014237,
+    "ast_hash": "7057d24f6eaff1f3338bb4426c00eb70",
+    "semantic_hash": "7057d24f6eaff1f3338bb4426c00eb70"
+  },
+  "src/pages/writing/hl7-elr-pipeline-architecture.jsx": {
+    "mtime": 1787163479.6921337,
+    "seen": 1788491668.0142379,
+    "ast_hash": "92673a0d57ea186d2787147f2bb04142",
+    "semantic_hash": "92673a0d57ea186d2787147f2bb04142"
+  },
+  "src/pages/writing/index.jsx": {
+    "mtime": 1787081134.8764637,
+    "seen": 1788491668.014239,
+    "ast_hash": "15df2a888a3638b1f973a167f7bafdb9",
+    "semantic_hash": "15df2a888a3638b1f973a167f7bafdb9"
+  },
+  "src/pages/writing/the-30-60-90-mentorship-playbook.jsx": {
+    "mtime": 1787081186.4723015,
+    "seen": 1788491668.01424,
+    "ast_hash": "1e40cc9d9bab4d0bbc02db3183db0678",
+    "semantic_hash": "1e40cc9d9bab4d0bbc02db3183db0678"
+  },
+  "src/pages/writing/why-fridays-are-for-demos.jsx": {
+    "mtime": 1787081202.863403,
+    "seen": 1788491668.01424,
+    "ast_hash": "423b2f6a095d3cab583634f039dae318",
+    "semantic_hash": "423b2f6a095d3cab583634f039dae318"
+  },
+  "src/utils/passcode.js": {
+    "mtime": 1787163423.8934944,
+    "seen": 1788491668.014241,
+    "ast_hash": "5eb0f9981ccba12c83f5ec91d9dbaaa8",
+    "semantic_hash": "5eb0f9981ccba12c83f5ec91d9dbaaa8"
+  },
+  "tailwind.config.js": {
+    "mtime": 1787077322.246244,
+    "seen": 1788491668.014242,
+    "ast_hash": "d9135c97296b1cff2cba479fc630a063",
+    "semantic_hash": "d9135c97296b1cff2cba479fc630a063"
+  },
+  "tsconfig.json": {
+    "mtime": 1787072735.2065785,
+    "seen": 1788491668.0142431,
+    "ast_hash": "f284d65ba1d0456c41801a850d082d15",
+    "semantic_hash": "f284d65ba1d0456c41801a850d082d15"
+  },
+  ".github/workflows/gatsby.yml": {
+    "mtime": 1787163492.5706275,
+    "seen": 1788491668.014244,
+    "ast_hash": "3a051a5137c3d911840a25276a6b4f26",
+    "semantic_hash": "3a051a5137c3d911840a25276a6b4f26"
+  },
+  "README.md": {
+    "mtime": 1787072728.3426144,
+    "seen": 1788491668.014245,
+    "ast_hash": "92291172ef1e6c1eb50d92c1ca63f14f",
+    "semantic_hash": "92291172ef1e6c1eb50d92c1ca63f14f"
+  },
+  "static/resumes/Abhay Resume-J.pdf": {
+    "mtime": 1787099136.7475014,
+    "seen": 1788491668.014246,
+    "ast_hash": "887917769287c0594b0f0438ab2c2879",
+    "semantic_hash": "887917769287c0594b0f0438ab2c2879"
+  },
+  "static/resumes/team-lead.pdf": {
+    "mtime": 1787072735.20571,
+    "seen": 1788491668.014247,
+    "ast_hash": "69423807c671d9d47e91d7588dd23cf0",
+    "semantic_hash": "69423807c671d9d47e91d7588dd23cf0"
+  },
+  "static/resumes/tpm.pdf": {
+    "mtime": 1787072735.2064404,
+    "seen": 1788491668.014247,
+    "ast_hash": "195fc0aa042812aaadaeffa80e56f1c3",
+    "semantic_hash": "195fc0aa042812aaadaeffa80e56f1c3"
+  },
+  "static/images/Sticker2.png": {
+    "mtime": 1787098220.0848522,
+    "seen": 1788491668.014248,
+    "ast_hash": "dd1b158a7dd0cd649b9d445cae55943b",
+    "semantic_hash": "dd1b158a7dd0cd649b9d445cae55943b"
+  },
+  "static/images/profile.png": {
+    "mtime": 1787072735.2053092,
+    "seen": 1788491668.0142488,
+    "ast_hash": "2facb56e5d79b0dc139955db77f558f9",
+    "semantic_hash": "2facb56e5d79b0dc139955db77f558f9"
+  },
+  "static/images/projects/jobminglr/employers.png": {
+    "mtime": 1787080782.5727925,
+    "seen": 1788491668.01425,
+    "ast_hash": "f902564e1bcbe4037d5367ec2bf516fa",
+    "semantic_hash": "f902564e1bcbe4037d5367ec2bf516fa"
+  },
+  "static/images/projects/jobminglr/home.png": {
+    "mtime": 1787080782.5196974,
+    "seen": 1788491668.014251,
+    "ast_hash": "94bcca40158f2252a5819ad5210ae9c4",
+    "semantic_hash": "94bcca40158f2252a5819ad5210ae9c4"
+  },
+  "static/images/sticker.jpeg": {
+    "mtime": 1787096171.7956755,
+    "seen": 1788491668.014252,
+    "ast_hash": "705092ceecfd0999cb1ab65f49915df7",
+    "semantic_hash": "705092ceecfd0999cb1ab65f49915df7"
+  }
+}
