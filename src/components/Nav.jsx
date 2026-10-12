@@ -48,13 +48,6 @@ const Nav = () => {
               <User size={16} />
               About
             </Link>
-            <Link
-              to="/resume"
-              activeClassName={activeClassName}
-              className="hover:text-brand dark:hover:text-sky-400"
-            >
-              Resume
-            </Link>
             <ThemeToggle />
           </div>
 
@@ -71,21 +64,18 @@ const Nav = () => {
           </div>
         </div>
         {open && (
-          <div className="md:hidden mt-3 rounded-2xl border border-gray-200 p-4 space-y-3 text-sm bg-white dark:bg-gray-900 dark:border-gray-800">
-            <Link to="/projects" className="block" onClick={() => setOpen(false)}>
+          <div className="md:hidden mt-3 rounded-2xl border border-gray-200 p-4 space-y-1 text-sm bg-white dark:bg-gray-900 dark:border-gray-800">
+            <Link to="/projects" className="block py-2" onClick={() => setOpen(false)}>
               Projects
             </Link>
-            <Link to="/leadership" className="block" onClick={() => setOpen(false)}>
+            <Link to="/leadership" className="block py-2" onClick={() => setOpen(false)}>
               Leadership
             </Link>
-            <Link to="/writing" className="block" onClick={() => setOpen(false)}>
+            <Link to="/writing" className="block py-2" onClick={() => setOpen(false)}>
               Writing
             </Link>
-            <Link to="/about" className="block" onClick={() => setOpen(false)}>
+            <Link to="/about" className="block py-2" onClick={() => setOpen(false)}>
               About
-            </Link>
-            <Link to="/resume" className="block" onClick={() => setOpen(false)}>
-              Resume
             </Link>
           </div>
         )}

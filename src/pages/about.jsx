@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import { Link } from "gatsby";
+import OpenToWorkBadge from "../components/OpenToWorkBadge";
 
 const linkClass =
   "text-brand dark:text-sky-400 underline underline-offset-4 hover:text-brand-dark dark:hover:text-sky-300";
@@ -50,6 +51,9 @@ export default function About() {
         <p className="text-center text-gray-500 dark:text-gray-400 mt-1">
           Software Engineer → Engineering Lead
         </p>
+        <div className="flex justify-center mt-3">
+          <OpenToWorkBadge />
+        </div>
 
         <div className="mt-8 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
           <p>
@@ -128,8 +132,7 @@ export default function About() {
             and help a team scale with it — and I'm comfortable in TPM-adjacent work when a role
             calls for it. If that sounds like a fit, take a look at the{" "}
             <Link to="/projects" className={linkClass}>project case studies</Link> and{" "}
-            <Link to="/leadership" className={linkClass}>leadership playbook</Link>, check my{" "}
-            <Link to="/resume" className={linkClass}>resume and availability</Link>, or{" "}
+            <Link to="/leadership" className={linkClass}>leadership playbook</Link>, or{" "}
             <a href="mailto:abhaysingh200009@gmail.com" className={linkClass}>
               reach out directly
             </a>

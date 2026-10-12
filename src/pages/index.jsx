@@ -3,7 +3,9 @@ import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "gatsby";
+import { Mail, Download, Linkedin } from "lucide-react";
 import ArchDiagram from "../components/ArchDiagram";
+import OpenToWorkBadge from "../components/OpenToWorkBadge";
 import { testimonials } from "../data/testimonials";
 
 export const Head = () => <Seo />;
@@ -22,53 +24,86 @@ export default function Home() {
         />
         <div className="relative max-w-6xl mx-auto px-6 pt-16 pb-10 grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
+            <motion.img
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.35 }}
+              src="/images/Sticker2.png"
+              alt="Abhay Singh"
+              className="h-24 w-24 sm:h-32 sm:w-32 md:hidden rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg mx-auto mb-4"
+            />
+
+            <OpenToWorkBadge />
+
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35 }}
-              className="text-3xl sm:text-5xl font-bold leading-tight tracking-tight"
+              className="mt-4 text-3xl sm:text-5xl font-bold leading-tight tracking-tight"
             >
               Software Engineer → <span className="text-brand dark:text-sky-400">Engineering Lead</span>
             </motion.h1>
 
-            <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl">
-              I’m Abhay (Sunny) — I design scalable systems, reduce costs without cutting corners,
-              and grow engineers through clear processes and mentorship.
+            <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl sm:hidden">
+              I design scalable systems, cut costs, and grow engineers through clear process.
+            </p>
+            <p className="mt-4 text-gray-700 dark:text-gray-300 max-w-2xl hidden sm:block">
+              I'm Abhay (Sunny) — I design scalable systems, cut infra costs without cutting
+              corners, and grow engineers through clear processes and mentorship.
+            </p>
+
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300 max-w-2xl sm:hidden">
+              Looking for a <strong className="text-gray-900 dark:text-gray-100">Tech Lead</strong> role
+              — healthcare, fintech, or infra. Remote (US) or hybrid Austin, TX.
+            </p>
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300 max-w-2xl hidden sm:block">
+              Looking for a <strong className="text-gray-900 dark:text-gray-100">Tech Lead</strong> role
+              at a Series B+ product company in healthcare, fintech, or infrastructure — owning a
+              system end-to-end for a team of 5–15 engineers. Full-time, remote (US) or hybrid from
+              Austin, TX.
             </p>
             <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">
-              Core stack: React, Java/Spring, Javascript, Python, AWS, PostgreSQL, MongoDB.
+              Core stack: React, Java/Spring, AWS, PostgreSQL<span className="hidden sm:inline">, JavaScript, Python, MongoDB</span>.
             </p>
 
-            <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm">
-              Recently: X12, HL7 processing, GenAI pilots, cost-optimization.
-            </p>
-
-            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 max-w-2xl">
-              I'm looking for Series B+ product companies working with regulated or high-stakes
-              data — healthcare, fintech, or infrastructure — where a Tech Lead owns systems
-              end-to-end for a team of 5–15 engineers.
-            </p>
-            <p className="mt-2 text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500">
-              Open to: full-time · remote (US) or hybrid from Austin, TX
-            </p>
-            <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-              👋 Say hi — always up for talking systems design, career pivots, or good taco spots in Austin.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href="mailto:abhaysingh200009@gmail.com"
+                className="inline-flex items-center gap-2 rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
+              >
+                <Mail size={16} /> <span className="sm:hidden">Contact</span><span className="hidden sm:inline">Contact Me</span>
+              </a>
+              <a
+                href="/abhay-singh.vcf"
+                download
+                className="inline-flex items-center gap-2 rounded-xl border border-gray-200 dark:border-gray-700 px-5 py-3 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+              >
+                <Download size={16} /> <span className="sm:hidden">Save Contact</span><span className="hidden sm:inline">Save My Contact</span>
+              </a>
               <Link
                 to="/projects"
-                className="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
+                className="text-sm font-semibold text-brand dark:text-sky-400 hover:underline underline-offset-4 px-2"
               >
-                View Case Studies
+                <span className="sm:hidden">Case Studies →</span><span className="hidden sm:inline">View Case Studies →</span>
               </Link>
-              <Link
-                to="/resume"
-                className="rounded-xl border border-gray-200 dark:border-gray-700 px-5 py-3 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+              <a
+                href="https://www.linkedin.com/in/abbi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex items-center justify-center h-11 w-11 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-brand hover:border-brand dark:text-gray-400 dark:hover:text-sky-400 dark:hover:border-sky-400 transition"
               >
-                View Resume
-              </Link>
+                <Linkedin size={18} />
+              </a>
             </div>
+
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:hidden">
+              👋 Say hi at Out &amp; Equal.
+            </p>
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">
+              👋 Say hi at Out &amp; Equal — always up for talking systems design, career pivots, or
+              good taco spots in Austin.
+            </p>
           </div>
 
           <motion.img
@@ -77,7 +112,7 @@ export default function Home() {
             transition={{ duration: 0.35 }}
             src="/images/Sticker2.png"
             alt="Abhay Singh"
-            className="hidden sm:block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg justify-self-center"
+            className="hidden md:block h-40 w-40 rounded-full object-cover ring-4 ring-white dark:ring-gray-900 shadow-lg justify-self-center"
           />
         </div>
       </section>
@@ -85,19 +120,19 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-12">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 rounded-2xl border border-gray-100 dark:border-gray-800 p-6 bg-white dark:bg-gray-900">
           <div>
-            <div className="text-2xl font-bold">10+ yrs</div>
+            <div className="text-2xl font-bold text-brand dark:text-sky-400">10+ yrs</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">Building & shipping</div>
           </div>
           <div>
-            <div className="text-2xl font-bold">99.9%+</div>
+            <div className="text-2xl font-bold text-brand dark:text-sky-400">99.9%+</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">SLA targets achieved</div>
           </div>
           <div>
-            <div className="text-2xl font-bold">$50M</div>
+            <div className="text-2xl font-bold text-brand dark:text-sky-400">$50M</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">Infra cost saved (CDC re-host)</div>
           </div>
           <div>
-            <div className="text-2xl font-bold">6→mid</div>
+            <div className="text-2xl font-bold text-brand dark:text-sky-400">6→mid</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">Mentored juniors to mid-level</div>
           </div>
         </div>
@@ -190,12 +225,19 @@ export default function Home() {
           <p className="mt-2 text-gray-600 dark:text-gray-300">
             I’m happy to share deeper architecture docs, dashboards, and ADRs on request.
           </p>
-          <div className="mt-5 flex justify-center gap-3">
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
             <a
               href="mailto:abhaysingh200009@gmail.com"
-              className="rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
+              className="inline-flex items-center gap-2 rounded-xl bg-brand text-white px-5 py-3 font-semibold hover:bg-brand-dark transition"
             >
-              Contact
+              <Mail size={16} /> Contact
+            </a>
+            <a
+              href="/abhay-singh.vcf"
+              download
+              className="inline-flex items-center gap-2 rounded-xl border border-gray-200 dark:border-gray-700 px-5 py-3 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            >
+              <Download size={16} /> Save My Contact
             </a>
             <Link
               to="/projects"

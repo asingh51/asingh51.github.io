@@ -39,19 +39,19 @@ export default function RequestPasscodeButton({ pageId, pageLabel }) {
 
   return (
     <div className="mt-2">
-      <form onSubmit={onRequest} className="flex gap-2">
+      <form onSubmit={onRequest} className="flex flex-col sm:flex-row gap-2">
         <input
           type="email"
           required
           placeholder="Your email, so I can reply"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-1 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1.5 text-sm"
+          className="flex-1 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 sm:py-1.5 text-sm"
         />
         <button
           type="submit"
           disabled={status === "sending"}
-          className="text-sm px-3 py-1.5 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-brand dark:hover:border-sky-400 disabled:opacity-50"
+          className="text-sm px-3 py-2 sm:py-1.5 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-brand dark:hover:border-sky-400 disabled:opacity-50"
         >
           {status === "sending" ? "Sending…" : "Send request"}
         </button>

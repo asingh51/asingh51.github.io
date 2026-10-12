@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { ArrowUpRight } from "lucide-react";
 
 const ImpactCard = ({ title, role, timeframe, bullets, slug, liveUrl }) => (
-  <div className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition">
+  <div className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-xl hover:shadow-brand/10 hover:border-brand/30 dark:hover:border-sky-400/30 hover:-translate-y-0.5 transition">
     <div className="flex items-baseline justify-between gap-3">
       <h3 className="text-lg font-semibold">{title}</h3>
       <span className="text-xs shrink-0 text-gray-500 dark:text-gray-400">{timeframe}</span>
